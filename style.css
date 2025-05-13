@@ -103,6 +103,17 @@ ul {
         margin-top: 8px;
     }
 
+    /* Mantieni dimensioni e proporzioni icona detail */
+    .detail-overlay {
+        width: 64px;
+        height: 64px;
+    }
+    .detail-overlay img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
     /* Spazio tra un reel e l’altro */
     .gallery-item {
         margin-bottom: 20px;
