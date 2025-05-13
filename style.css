@@ -92,4 +92,24 @@ ul {
 }
 @media (max-width: 768px) {
     .gallery { grid-template-columns: 1fr; }
+
+
+/* Correzione overlay su mobile */
+@media (max-width: 768px) {
+    .reel-info,
+    .detail-overlay {
+        position: static;
+        bottom: auto;
+        right: auto;
+        margin-top: 8px;
+    }
+
+    /* Spazio tra un reel e l’altro */
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+
 }
