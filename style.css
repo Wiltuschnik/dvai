@@ -76,11 +76,8 @@ ul {
     position: absolute;
     bottom: -70px;
     right: 10px;
-    width: 64px;
-    height: 64px;
     pointer-events: auto;
 }
-
 .detail-overlay img {
     display: block;
     width: 64px;
@@ -100,12 +97,8 @@ ul {
     .reel-info,
     .detail-overlay {
         position: static;
-        bottom: auto;
-        right: auto;
         margin-top: 8px;
     }
-
-   
 
     /* Spazio tra un reel e l’altro */
     .gallery-item {
