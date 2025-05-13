@@ -1,0 +1,95 @@
+/* Stile base */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* Layout grid per immagini */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+/* Thumbnail (generale e hover) */
+.thumbnail, .thumb {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail:hover, .thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.3);
+}
+
+/* Contenitore titolo (full width) */
+.reel-info {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* Titolo del reel */
+.reel-title {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Icona detail.png */
+.detail-overlay {
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    pointer-events: auto;
+}
+
+.detail-overlay img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsività */
+@media (max-width: 1200px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .gallery { grid-template-columns: 1fr; }
+}
