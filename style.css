@@ -91,11 +91,10 @@ ul {
     .gallery { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
+    /* Layout a colonna singola */
     .gallery { grid-template-columns: 1fr; }
 
-
-/* Correzione overlay su mobile */
-@media (max-width: 768px) {
+    /* Correzione overlay su mobile */
     .reel-info,
     .detail-overlay {
         position: static;
@@ -108,8 +107,4 @@ ul {
     .gallery-item {
         margin-bottom: 20px;
     }
-}
-
-
-
 }
