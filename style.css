@@ -18,3 +18,4 @@ ul { padding:0; list-style:none; }
 .nav-link { display:inline-block; margin:10px 15px; font-size:1rem; }
 @media(max-width:1200px){.gallery{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:768px){.gallery{grid-template-columns:1fr;} .gallery-item{margin-bottom:20px;}}
+.reel-track { text-align: center; font-size: 0.9rem; color: #ccc; margin-top: -10px; margin-bottom: 20px; }
